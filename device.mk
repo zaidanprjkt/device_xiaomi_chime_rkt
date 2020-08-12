@@ -431,7 +431,8 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr
+    android.hardware.power-service.xiaomi-libperfmgr \
+    libqti-perfd-client
 
 # Properties
 include $(LOCAL_PATH)/configs/properties/default.mk

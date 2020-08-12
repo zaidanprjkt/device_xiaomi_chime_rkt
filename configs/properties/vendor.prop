@@ -222,6 +222,9 @@ persist.vendor.console.silent.config=1
 # Phantom process monitoring
 sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.data.mode=concurrent
