@@ -26,8 +26,9 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-im
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
-
+    hardware/xiaomi \
+    hardware/google/interfaces \
+    hardware/google/pixel
 # Flatten APEXs for performance
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
@@ -427,16 +428,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2 \
-    vendor.qti.hardware.perf@2.2.vendor
-
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2 \
-    android.hardware.power@1.2.vendor \
-    android.hardware.power-service-qti
+    android.hardware.power-service.xiaomi-libperfmgr
 
 # Properties
 include $(LOCAL_PATH)/configs/properties/default.mk
