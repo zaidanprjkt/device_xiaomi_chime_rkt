@@ -397,6 +397,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
+    DialerOverlayChime \
     FrameworksResOverlayChime \
     NotchBarKillerChime \
     SettingsOverlayChime \
