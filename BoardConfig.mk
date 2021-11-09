@@ -70,6 +70,9 @@ DEVICE_SPECIFIC_AUDIO_PATH := $(DEVICE_PATH)/hals/audio
 DEVICE_SPECIFIC_DISPLAY_PATH := $(DEVICE_PATH)/hals/display
 DEVICE_SPECIFIC_MEDIA_PATH := $(DEVICE_PATH)/hals/media
 
+# Compression
+PRODUCT_FS_COMPRESSION := 1
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
