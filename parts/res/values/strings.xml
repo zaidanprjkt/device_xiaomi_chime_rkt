@@ -18,6 +18,9 @@
     <!-- App Name -->
     <string name="deviceparts_label" translatable="false">Device Parts</string>
 
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
     <!-- Ambient settings -->
     <string name="ambient_enable">Use ambient display</string>
 
