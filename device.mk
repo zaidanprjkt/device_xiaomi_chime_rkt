@@ -415,8 +415,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
-# Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 29
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service.chime \
+    vendor.qti.hardware.vibrator-impl
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vibrator/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
