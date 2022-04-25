@@ -28,3 +28,6 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
+
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 29
