@@ -432,6 +432,7 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.chime-libperfmgr \
+    android.hardware.power@1.3.vendor \
     libqti-perfd-client
 
 PRODUCT_COPY_FILES += \
