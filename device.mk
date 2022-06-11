@@ -422,6 +422,7 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlayChime \
     NotchBarKillerChime \
     SettingsOverlayChime \
+    SettingsProviderChime \
     SystemUIOverlayChime \
     TelephonyOverlayChime \
     WifiResCommon
