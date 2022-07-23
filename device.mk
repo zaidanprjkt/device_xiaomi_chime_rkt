@@ -23,12 +23,6 @@ $(call inherit-product, vendor/xiaomi/chime/chime-vendor.mk)
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -140,10 +134,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
-
-# CarrierConfig
-PRODUCT_PACKAGES += \
-    CarrierConfigOverlay
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -368,10 +358,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_lemon/android.hardware.nfc.uicc.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_lemon/android.hardware.nfc.xml
 
-# Notch Bar Killer
-PRODUCT_PACKAGES += \
-    NotchBarKillerChime
-
 # OMX
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
@@ -388,6 +374,16 @@ PRODUCT_PACKAGES += \
     libstagefrighthw_omx \
     libstagefrighthw_foundation \
     libstagefright_omx.vendor
+
+# Overlays
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
+    FrameworksResOverlayChime \
+    NotchBarKillerChime \
+    SettingsOverlayChime \
+    SystemUIOverlayChime \
+    TelephonyOverlayChime \
+    WifiResCommon
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -559,7 +555,6 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
     vendor.qti.hardware.wifi.supplicant@2.2.vendor \
-    WifiResCommon \
     wpa_supplicant \
     wpa_supplicant.conf
 
