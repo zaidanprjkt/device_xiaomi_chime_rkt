@@ -111,8 +111,8 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/chime
 TARGET_KERNEL_CONFIG := vendor/chime_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
-TARGET_KERNEL_ADDITIONAL_FLAGS += LLVM=1
+NEED_KERNEL_MODULE_SYSTEM := true
+TARGET_KERNEL_ADDITIONAL_FLAGS := DTC=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"  AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip LLVM=1 LLVM_IAS=1
 
 # Media
 TARGET_USES_ION := true
