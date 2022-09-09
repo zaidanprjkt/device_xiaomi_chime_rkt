@@ -11,13 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from chime device
 $(call inherit-product, device/xiaomi/chime/device.mk)
 
-# Inherit some common xdroidOSS stuff.
-$(call inherit-product, vendor/xdroid/config/common.mk)
-XDROID_MAINTAINER := frostg012
-XDROID_BOOT := 1080
+# Inherit some common RiceDroid Flags.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+RICE_MAINTAINER := @rktdnt
+RICE_OFFICIAL := true
+TARGET_SUPPORTS_QUICK_TAP := true
+#WITH_GMS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_ENABLE_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xdroid_chime
+PRODUCT_NAME := lineage_chime
 PRODUCT_DEVICE := chime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6115

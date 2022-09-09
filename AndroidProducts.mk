@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_chime.mk
+    $(LOCAL_DIR)/lineage_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_chime-user \
-    xdroid_chime-userdebug \
-    xdroid_chime-eng
+    lineage_chime-user \
+    lineage_chime-userdebug \
+    lineage_chime-eng
