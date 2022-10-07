@@ -9,4 +9,7 @@
     <string name="build_maintainer_summary">Ryyaap (@rktdnt)</string>
     <string name="build_maintainer_telegram">https://t.me/rktdnt</string>
 
+    <!-- Build status -->
+    <string name="build_status_summary">Exclusive Build</string>
+
 </resources>
