@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from miui_LIMEPRE_22.7.6_5b91be000b_12.0
+# All unpinned blobs below are extracted from miui_LIMEGlobal_V13.0.1.0.SJQMIXM_be79b2c486_12.0
 
 # ACDB
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Bluetooth_cal.acdb
@@ -339,6 +339,7 @@ vendor/lib64/camera/components/com.qti.node.eisv3.so
 vendor/lib64/camera/components/com.qti.node.fcv.so
 vendor/lib64/camera/components/com.qti.node.gpu.so
 vendor/lib64/camera/components/com.qti.node.memcpy.so
+vendor/lib64/camera/components/com.qti.node.mialgocontrol.so
 vendor/lib64/camera/components/com.qti.node.realtimebokeh.so
 vendor/lib64/camera/components/com.qti.node.remosaic.so
 vendor/lib64/camera/components/com.qti.node.stich.so
@@ -367,9 +368,6 @@ vendor/lib64/camera/components/com.qtistatic.stats.af.so
 vendor/lib64/camera/components/com.qtistatic.stats.awb.so
 vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib64/camera/components/com.vidhance.node.processing.so
-
-# Camera (components)(mialgocontrol) - stripped
-vendor/lib64/camera/components/com.qti.node.mialgocontrol.so
 
 # Camera (configs)
 vendor/etc/camera/model/bokeh_model/cache_data
@@ -700,7 +698,6 @@ vendor/lib/hw/fingerprint.silead.default.so
 vendor/lib/com.fingerprints.extension@1.0.so
 vendor/lib/libsl_fp_impl.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/hw/cdfinger.fingerprint.default.so
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/hw/fingerprint.silead.default.so
 vendor/lib64/hw/focal_fingerprint.default.so
