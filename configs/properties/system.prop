@@ -34,7 +34,7 @@ persist.vendor.dpm.feature=1
 # Display
 debug.cpurend.vsync=false
 debug.performance.tuning=1
-debug.sf.latch_unsignaled=1
+debug.sf.auto_latch_unsignaled=true
 persist.demo.hdmirotationlock=false
 
 # Fingerprint
