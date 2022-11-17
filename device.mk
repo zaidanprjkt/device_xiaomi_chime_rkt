@@ -37,10 +37,6 @@ OVERRIDE_TARGET_FLATTEN_APEX := true
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-# Adaptive Charging
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/adaptivecharging.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/adaptivecharging.xml
-
 # Adaptive Suspend
 PRODUCT_PROPERTY_OVERRIDES += \
     suspend.short_suspend_threshold_millis=2000 \
@@ -248,10 +244,6 @@ PRODUCT_PACKAGES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
-
-# Google Battery HAL
-PRODUCT_PACKAGES += \
-    vendor.google.google_battery@1.1
 
 # GPS
 PRODUCT_PACKAGES += \
