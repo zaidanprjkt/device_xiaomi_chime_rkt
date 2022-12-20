@@ -1,6 +1,8 @@
-<h2 align="center">Device configuration for POCO M3/Redmi 9T (chime)</h2>
+Unified Device Tree for POCO M3, Redmi 9T, Redmi 9T NFC, Redmi 9 Power
 
-![banner-chime](https://telegra.ph/file/ed5c8cbd91ac3dd7739b3.jpg)
+The POCO M3 (codenamed "citrus") is a mid-range smartphone from POCO, a Xiaomi sub-brand.
+
+The Redmi 9T/9T NFC/9 Power (codenamed "lime") is a mid-range smartphone from Redmi, a Xiaomi sub-brand.
 
 ### Information
 
@@ -21,6 +23,7 @@ Display | IPS LCD, 400 nits (typ), 6.53 inches, 1080 x 2340 pixels, 19.5:9 ratio
 ```
  Copyright (C) 2022 The LineageOS Project
  Copyright (C) 2022 frstprjkt.
+ Copyright (C) 2022 csmqfest.
 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
