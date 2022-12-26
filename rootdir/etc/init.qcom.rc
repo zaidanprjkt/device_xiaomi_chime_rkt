@@ -32,6 +32,7 @@ import /vendor/etc/init/hw/init.qcom.test.rc
 import /vendor/etc/init/hw/init.stnfc.rc
 import /vendor/etc/init/hw/init.target.rc
 import /vendor/etc/init/hw/init.qcom.factory.rc
+import /vendor/etc/init/hw/init.chime.rc
 
 on early-init
   # Change ownership of hw_recovery related nodes
