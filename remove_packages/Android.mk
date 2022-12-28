@@ -7,9 +7,12 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     AmbientSensePrebuilt \
     arcore \
+    BetterBugStub \
     Camera2 \
     Chrome \
     Chrome-Stub \
+    CalculatorGooglePrebuilt \
+    CalendarGooglePrebuilt \
     ConnMO \
     ConnMetrics \
     DCMO \
@@ -18,6 +21,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     Drive \
     GCS \
     GoogleCamera \
+    GoogleTTS \
     Maps \
     Music \
     MyVerizonServices \
@@ -42,6 +46,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     SprintDM \
     SprintHM \
     Tycho \
+    talkback \
     USCCDM \
     Videos \
     VZWAPNLib \
